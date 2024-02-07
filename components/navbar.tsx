@@ -4,17 +4,13 @@ import { Menu } from 'lucide-react'
 import { NavigationSection } from '@/types/infoType'
 
 export default function Navbar({
-  path = '/',
-  pathName = 'blog.mosespace',
-  navLinks = [
-    { label: 'All courses', href: '/all-courses' },
-    { label: 'New courses', href: '/new-courses' },
-    { label: 'Free courses', href: '/free-courses' },
-  ],
+  path,
+  pathName,
+  navLinks,
 }: NavigationSection) {
   return (
     <div className='mt-14'>
-      <div className='relative mx-auto w-full bg-primary px-10'>
+      <div className='bg-primary relative mx-auto w-full px-10'>
         <div className='relative mx-auto flex w-full flex-col p-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8'>
           <div className='flex flex-row items-center justify-between lg:justify-start'>
             <Link

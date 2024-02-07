@@ -16,11 +16,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const navLinks = [
+    { label: 'All courses', href: '/all-courses' },
+    { label: 'New courses', href: '/new-courses' },
+    { label: 'Free courses', href: '/free-courses' },
+  ]
+
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Navbar />
-        <Announcement />
+        <Navbar path='/' pathName='blog.mosespace' navLinks={navLinks} />
+        <Announcement
+          buttonInfo='Support on Youtube!'
+          description='Launched on Youtube! If you like the content we give here, please support me by subscribing to my youtube @codewithmoses today.'
+        />
         {children}
       </body>
     </html>

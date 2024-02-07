@@ -2,8 +2,8 @@ import React from 'react'
 import { MoveRight, Rocket } from 'lucide-react'
 
 export default function Announcement({
-  description = 'Launched on Youtube! If you like the content we give here, please support me by subscribing to my youtube @codewithmoses today.',
-  buttonInfo = 'Support on Youtube!',
+  description,
+  buttonInfo,
 }: {
   description: string
   buttonInfo: string
