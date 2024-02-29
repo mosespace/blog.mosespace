@@ -4,52 +4,52 @@ export default function detailedblog() {
   return (
     <>
       {/* <!-- Blog Article --> */}
-      <div class='mx-auto max-w-3xl px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-10'>
-        <div class='max-w-2xl'>
+      <div className='mx-auto max-w-3xl px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-10'>
+        <div className='max-w-2xl'>
           {/* <!-- Avatar Media --> */}
-          <div class='mb-6 flex items-center justify-between'>
-            <div class='flex w-full gap-x-5 sm:items-center sm:gap-x-3'>
-              <div class='flex-shrink-0'>
+          <div className='mb-6 flex items-center justify-between'>
+            <div className='flex w-full gap-x-5 sm:items-center sm:gap-x-3'>
+              <div className='flex-shrink-0'>
                 <img
-                  class='h-12 w-12 rounded-full'
+                  className='h-12 w-12 rounded-full'
                   src='https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80'
                   alt='Image Description'
                 />
               </div>
 
-              <div class='grow'>
-                <div class='flex items-center justify-between gap-x-2'>
+              <div className='grow'>
+                <div className='flex items-center justify-between gap-x-2'>
                   <div>
                     {/* <!-- Tooltip --> */}
-                    <div class='hs-tooltip inline-block [--placement:bottom] [--trigger:hover]'>
-                      <div class='hs-tooltip-toggle block cursor-pointer text-start sm:mb-1'>
-                        <span class='font-semibold text-gray-800 dark:text-gray-200'>
+                    <div className='hs-tooltip inline-block [--placement:bottom] [--trigger:hover]'>
+                      <div className='hs-tooltip-toggle block cursor-pointer text-start sm:mb-1'>
+                        <span className='font-semibold text-gray-800 dark:text-gray-200'>
                           Leyla Ludic
                         </span>
 
                         {/* <!-- Dropdown Card --> */}
                         <div
-                          class='hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible invisible absolute z-10 inline-block max-w-xs cursor-default divide-y divide-gray-700 rounded-xl bg-gray-900 opacity-0 shadow-lg transition-opacity dark:bg-black'
+                          className='hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible invisible absolute z-10 inline-block max-w-xs cursor-default divide-y divide-gray-700 rounded-xl bg-gray-900 opacity-0 shadow-lg transition-opacity dark:bg-black'
                           role='tooltip'
                         >
                           {/* <!-- Body --> */}
-                          <div class='p-4 sm:p-5'>
-                            <div class='mb-2 flex w-full gap-x-5 sm:items-center sm:gap-x-3'>
-                              <div class='flex-shrink-0'>
+                          <div className='p-4 sm:p-5'>
+                            <div className='mb-2 flex w-full gap-x-5 sm:items-center sm:gap-x-3'>
+                              <div className='flex-shrink-0'>
                                 <img
-                                  class='h-8 w-8 rounded-full'
+                                  className='h-8 w-8 rounded-full'
                                   src='https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80'
                                   alt='Image Description'
                                 />
                               </div>
 
-                              <div class='grow'>
-                                <p class='text-lg font-semibold text-gray-200'>
+                              <div className='grow'>
+                                <p className='text-lg font-semibold text-gray-200'>
                                   Leyla Ludic
                                 </p>
                               </div>
                             </div>
-                            <p class='text-sm text-gray-400'>
+                            <p className='text-sm text-gray-400'>
                               Leyla is a Customer Success Specialist at Preline
                               and spends her time speaking to in-house
                               recruiters all over the world.
@@ -58,29 +58,29 @@ export default function detailedblog() {
                           {/* <!-- End Body --> */}
 
                           {/* <!-- Footer --> */}
-                          <div class='flex items-center justify-between px-4 py-3 sm:px-5'>
-                            <ul class='space-x-3 text-xs'>
-                              <li class='inline-block'>
-                                <span class='font-semibold text-gray-200'>
+                          <div className='flex items-center justify-between px-4 py-3 sm:px-5'>
+                            <ul className='space-x-3 text-xs'>
+                              <li className='inline-block'>
+                                <span className='font-semibold text-gray-200'>
                                   56
                                 </span>
-                                <span class='text-gray-400'>articles</span>
+                                <span className='text-gray-400'>articles</span>
                               </li>
-                              <li class='inline-block'>
-                                <span class='font-semibold text-gray-200'>
+                              <li className='inline-block'>
+                                <span className='font-semibold text-gray-200'>
                                   1k+
                                 </span>
-                                <span class='text-gray-400'>followers</span>
+                                <span className='text-gray-400'>followers</span>
                               </li>
                             </ul>
 
                             <div>
                               <button
                                 type='button'
-                                class='inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-blue-600 px-2.5 py-1.5 text-xs font-semibold text-white hover:bg-blue-700 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                                className='inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-blue-600 px-2.5 py-1.5 text-xs font-semibold text-white hover:bg-blue-700 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                               >
                                 <svg
-                                  class='h-3.5 w-3.5 flex-shrink-0'
+                                  className='h-3.5 w-3.5 flex-shrink-0'
                                   xmlns='http://www.w3.org/2000/svg'
                                   width='16'
                                   height='16'
@@ -104,11 +104,11 @@ export default function detailedblog() {
                     </div>
                     {/* <!-- End Tooltip --> */}
 
-                    <ul class='text-xs text-gray-500'>
-                      <li class='relative inline-block pe-6 before:absolute before:end-2 before:top-1/2 before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-300 last:pe-0 last-of-type:before:hidden dark:text-gray-400 dark:before:bg-gray-600'>
+                    <ul className='text-xs text-gray-500'>
+                      <li className='relative inline-block pe-6 before:absolute before:end-2 before:top-1/2 before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-300 last:pe-0 last-of-type:before:hidden dark:text-gray-400 dark:before:bg-gray-600'>
                         Jan 18
                       </li>
-                      <li class='relative inline-block pe-6 before:absolute before:end-2 before:top-1/2 before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-300 last:pe-0 last-of-type:before:hidden dark:text-gray-400 dark:before:bg-gray-600'>
+                      <li className='relative inline-block pe-6 before:absolute before:end-2 before:top-1/2 before:h-1 before:w-1 before:-translate-y-1/2 before:rounded-full before:bg-gray-300 last:pe-0 last-of-type:before:hidden dark:text-gray-400 dark:before:bg-gray-600'>
                         8 min read
                       </li>
                     </ul>
@@ -118,10 +118,10 @@ export default function detailedblog() {
                   <div>
                     <button
                       type='button'
-                      class='inline-flex items-center gap-x-2 rounded-lg border border-gray-200 bg-white px-2.5 py-1.5 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-700 dark:bg-slate-900 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                      className='inline-flex items-center gap-x-2 rounded-lg border border-gray-200 bg-white px-2.5 py-1.5 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-700 dark:bg-slate-900 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                     >
                       <svg
-                        class='h-3.5 w-3.5'
+                        className='h-3.5 w-3.5'
                         xmlns='http://www.w3.org/2000/svg'
                         width='16'
                         height='16'
@@ -141,13 +141,13 @@ export default function detailedblog() {
           {/* <!-- End Avatar Media --> */}
 
           {/* <!-- Content --> */}
-          <div class='space-y-5 md:space-y-8'>
-            <div class='space-y-3'>
-              <h2 class='text-2xl font-bold md:text-3xl dark:text-white'>
+          <div className='space-y-5 md:space-y-8'>
+            <div className='space-y-3'>
+              <h2 className='text-2xl font-bold md:text-3xl dark:text-white'>
                 Announcing a free plan for small teams
               </h2>
 
-              <p class='text-lg text-gray-800 dark:text-gray-200'>
+              <p className='text-lg text-gray-800 dark:text-gray-200'>
                 At preline, our mission has always been focused on bringing
                 openness and transparency to the design process. We've always
                 believed that by providing a space where designers can share
@@ -156,23 +156,23 @@ export default function detailedblog() {
               </p>
             </div>
 
-            <p class='text-lg text-gray-800 dark:text-gray-200'>
+            <p className='text-lg text-gray-800 dark:text-gray-200'>
               We're proud to be a part of creating a more open culture and to
               continue building a product that supports this vision.
             </p>
 
             <figure>
               <img
-                class='w-full rounded-xl object-cover'
+                className='w-full rounded-xl object-cover'
                 src='https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                 alt='Image Description'
               />
-              <figcaption class='mt-3 text-center text-sm text-gray-500'>
+              <figcaption className='mt-3 text-center text-sm text-gray-500'>
                 A woman sitting at a table.
               </figcaption>
             </figure>
 
-            <p class='text-lg text-gray-800 dark:text-gray-200'>
+            <p className='text-lg text-gray-800 dark:text-gray-200'>
               As we've grown, we've seen how Preline has helped companies such
               as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their
               designers closer together to create amazing things. We've also
@@ -180,10 +180,10 @@ export default function detailedblog() {
               the better teams adapt and communicate with one another.
             </p>
 
-            <p class='text-lg text-gray-800 dark:text-gray-200'>
+            <p className='text-lg text-gray-800 dark:text-gray-200'>
               That's why we are excited to share that we now have a{' '}
               <a
-                class='font-medium text-blue-600 decoration-2 hover:underline'
+                className='font-medium text-blue-600 decoration-2 hover:underline'
                 href='#'
               >
                 free version of Preline
@@ -192,33 +192,33 @@ export default function detailedblog() {
               teams a chance to create a culture of openness early on.
             </p>
 
-            <blockquote class='p-4 text-center sm:px-7'>
-              <p class='text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-gray-200'>
+            <blockquote className='p-4 text-center sm:px-7'>
+              <p className='text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-gray-200'>
                 To say that switching to Preline has been life-changing is an
                 understatement. My business has tripled and I got my life back.
               </p>
-              <p class='mt-5 text-gray-800 dark:text-gray-200'>
+              <p className='mt-5 text-gray-800 dark:text-gray-200'>
                 Nicole Grazioso
               </p>
             </blockquote>
 
             <figure>
               <img
-                class='w-full rounded-xl object-cover'
+                className='w-full rounded-xl object-cover'
                 src='https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
                 alt='Image Description'
               />
-              <figcaption class='mt-3 text-center text-sm text-gray-500'>
+              <figcaption className='mt-3 text-center text-sm text-gray-500'>
                 A man and a woman looking at a cell phone.
               </figcaption>
             </figure>
 
-            <div class='space-y-3'>
-              <h3 class='text-2xl font-semibold dark:text-white'>
+            <div className='space-y-3'>
+              <h3 className='text-2xl font-semibold dark:text-white'>
                 Bringing the culture of sharing to everyone
               </h3>
 
-              <p class='text-lg text-gray-800 dark:text-gray-200'>
+              <p className='text-lg text-gray-800 dark:text-gray-200'>
                 We know the power of sharing is real, and we want to create an
                 opportunity for everyone to try Preline and explore how
                 transformative open communication can be. Now you can have a
@@ -228,25 +228,25 @@ export default function detailedblog() {
               </p>
             </div>
 
-            <ul class='list-outside list-disc space-y-5 ps-5 text-lg text-gray-800 dark:text-gray-200'>
-              <li class='ps-2'>
+            <ul className='list-outside list-disc space-y-5 ps-5 text-lg text-gray-800 dark:text-gray-200'>
+              <li className='ps-2'>
                 Preline allows us to collaborate in real time and is a really
                 great way for leadership on the team to stay up-to-date with
                 what everybody is working on,"{' '}
                 <a
-                  class='font-medium text-blue-600 decoration-2 hover:underline'
+                  className='font-medium text-blue-600 decoration-2 hover:underline'
                   href='#'
                 >
                   said
                 </a>{' '}
                 Stewart Scott-Curran, Intercom's Director of Brand Design.
               </li>
-              <li class='ps-2'>
+              <li className='ps-2'>
                 Preline opened a new way of sharing. It's a persistent way for
                 everyone to see and absorb each other's work," said David Scott,
                 Creative Director at{' '}
                 <a
-                  class='font-medium text-blue-600 decoration-2 hover:underline'
+                  className='font-medium text-blue-600 decoration-2 hover:underline'
                   href='#'
                 >
                   Eventbrite
@@ -255,7 +255,7 @@ export default function detailedblog() {
               </li>
             </ul>
 
-            <p class='text-lg text-gray-800 dark:text-gray-200'>
+            <p className='text-lg text-gray-800 dark:text-gray-200'>
               Small teams and individual designers need a space where they can
               watch the design process unfold, both for themselves and for the
               people they work with – no matter if it's a fellow designer,
@@ -268,25 +268,25 @@ export default function detailedblog() {
 
             <div>
               <a
-                class='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                 href='#'
               >
                 Plan
               </a>
               <a
-                class='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                 href='#'
               >
                 Web development
               </a>
               <a
-                class='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                 href='#'
               >
                 Free
               </a>
               <a
-                class='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='m-1 inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                 href='#'
               >
                 Team
@@ -299,17 +299,17 @@ export default function detailedblog() {
       {/* <!-- End Blog Article --> */}
 
       {/* <!-- Sticky Share Group --> */}
-      <div class='sticky inset-x-0 bottom-6 text-center'>
-        <div class='inline-block rounded-full bg-white px-4 py-3 shadow-md dark:bg-gray-800'>
-          <div class='flex items-center gap-x-1.5'>
+      <div className='sticky inset-x-0 bottom-6 text-center'>
+        <div className='inline-block rounded-full bg-white px-4 py-3 shadow-md dark:bg-gray-800'>
+          <div className='flex items-center gap-x-1.5'>
             {/* <!-- Button --> */}
-            <div class='hs-tooltip inline-block'>
+            <div className='hs-tooltip inline-block'>
               <button
                 type='button'
-                class='hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
               >
                 <svg
-                  class='h-4 w-4 flex-shrink-0'
+                  className='h-4 w-4 flex-shrink-0'
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'
                   height='24'
@@ -324,7 +324,7 @@ export default function detailedblog() {
                 </svg>
                 875
                 <span
-                  class='hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible invisible absolute z-10 inline-block rounded bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity dark:bg-black'
+                  className='hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible invisible absolute z-10 inline-block rounded bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity dark:bg-black'
                   role='tooltip'
                 >
                   Like
@@ -333,16 +333,16 @@ export default function detailedblog() {
             </div>
             {/* <!-- Button --> */}
 
-            <div class='mx-3 block h-3 border-e border-gray-300 dark:border-gray-600'></div>
+            <div className='mx-3 block h-3 border-e border-gray-300 dark:border-gray-600'></div>
 
             {/* <!-- Button --> */}
-            <div class='hs-tooltip inline-block'>
+            <div className='hs-tooltip inline-block'>
               <button
                 type='button'
-                class='hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
               >
                 <svg
-                  class='h-4 w-4 flex-shrink-0'
+                  className='h-4 w-4 flex-shrink-0'
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'
                   height='24'
@@ -357,7 +357,7 @@ export default function detailedblog() {
                 </svg>
                 16
                 <span
-                  class='hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible invisible absolute z-10 inline-block rounded bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity dark:bg-black'
+                  className='hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible invisible absolute z-10 inline-block rounded bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity dark:bg-black'
                   role='tooltip'
                 >
                   Comment
@@ -366,17 +366,17 @@ export default function detailedblog() {
             </div>
             {/* <!-- Button --> */}
 
-            <div class='mx-3 block h-3 border-e border-gray-300 dark:border-gray-600'></div>
+            <div className='mx-3 block h-3 border-e border-gray-300 dark:border-gray-600'></div>
 
             {/* <!-- Button --> */}
-            <div class='hs-dropdown relative inline-flex'>
+            <div className='hs-dropdown relative inline-flex'>
               <button
                 type='button'
                 id='blog-article-share-dropdown'
-                class='hs-dropdown-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='hs-dropdown-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
               >
                 <svg
-                  class='h-4 w-4 flex-shrink-0'
+                  className='h-4 w-4 flex-shrink-0'
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'
                   height='24'
@@ -394,15 +394,15 @@ export default function detailedblog() {
                 Share
               </button>
               <div
-                class='hs-dropdown-menu duration hs-dropdown-open:opacity-100 z-10 mb-1 hidden w-56 rounded-xl bg-gray-900 p-2 opacity-0 shadow-md transition-[opacity,margin] dark:bg-black'
+                className='hs-dropdown-menu duration hs-dropdown-open:opacity-100 z-10 mb-1 hidden w-56 rounded-xl bg-gray-900 p-2 opacity-0 shadow-md transition-[opacity,margin] dark:bg-black'
                 aria-labelledby='blog-article-share-dropdown'
               >
                 <a
-                  class='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
+                  className='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
                   href='#'
                 >
                   <svg
-                    class='h-4 w-4 flex-shrink-0'
+                    className='h-4 w-4 flex-shrink-0'
                     xmlns='http://www.w3.org/2000/svg'
                     width='24'
                     height='24'
@@ -418,13 +418,13 @@ export default function detailedblog() {
                   </svg>
                   Copy link
                 </a>
-                <div class='my-2 border-t border-gray-600'></div>
+                <div className='my-2 border-t border-gray-600'></div>
                 <a
-                  class='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
+                  className='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
                   href='#'
                 >
                   <svg
-                    class='h-4 w-4 flex-shrink-0'
+                    className='h-4 w-4 flex-shrink-0'
                     xmlns='http://www.w3.org/2000/svg'
                     width='16'
                     height='16'
@@ -436,11 +436,11 @@ export default function detailedblog() {
                   Share on Twitter
                 </a>
                 <a
-                  class='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
+                  className='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
                   href='#'
                 >
                   <svg
-                    class='h-4 w-4 flex-shrink-0'
+                    className='h-4 w-4 flex-shrink-0'
                     xmlns='http://www.w3.org/2000/svg'
                     width='16'
                     height='16'
@@ -452,11 +452,11 @@ export default function detailedblog() {
                   Share on Facebook
                 </a>
                 <a
-                  class='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
+                  className='flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400'
                   href='#'
                 >
                   <svg
-                    class='h-4 w-4 flex-shrink-0'
+                    className='h-4 w-4 flex-shrink-0'
                     xmlns='http://www.w3.org/2000/svg'
                     width='16'
                     height='16'
