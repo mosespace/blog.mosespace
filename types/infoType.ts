@@ -13,3 +13,9 @@ export type NavigationSection = {
   pathName: string
   navLinks: navLinks[]
 }
+export type blogSection = {
+  title: string
+  href: string
+  image: string
+  description: string
+}

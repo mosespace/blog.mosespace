@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](hhttps://thedevdavid-digital-garden.vercel.app/).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://thedevdavid-digital-garden.vercel.app/).
 
 <!-- https://blog.ishandeveloper.com/?ref=portfolio -->
 ## Getting Started

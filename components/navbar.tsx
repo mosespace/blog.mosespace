@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 import { NavigationSection } from '@/types/infoType'
 
 export default function Navbar({
@@ -8,16 +10,20 @@ export default function Navbar({
   pathName,
   navLinks,
 }: NavigationSection) {
+  const pathname = usePathname()
+  if (pathname === '/dashboard') {
+    return null
+  }
   return (
     <div className='mt-14'>
-      <div className='bg-primary relative mx-auto w-full px-10'>
+      <div className='relative mx-auto w-full bg-primary px-10'>
         <div className='relative mx-auto flex w-full flex-col p-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8'>
           <div className='flex flex-row items-center justify-between lg:justify-start'>
             <Link
               href={path}
               className='text-lg tracking-tight text-white focus:outline-none focus:ring lg:text-2xl'
             >
-              <span className='font-bold focus:ring-0 lg:text-lg'>
+              <span className='font-bold text-lime-500 focus:ring-0 lg:text-lg'>
                 {pathName}
               </span>
             </Link>
