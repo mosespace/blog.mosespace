@@ -15,9 +15,9 @@ export default function Navbar({
     return null
   }
   return (
-    <div className='mt-14'>
-      <div className='relative mx-auto w-full bg-primary px-10'>
-        <div className='relative mx-auto flex w-full flex-col p-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8'>
+    <div className='mt-[7.3rem]  md:mt-14'>
+      <div className='relative mx-auto w-full bg-primary px-4'>
+        <div className='relative mx-auto flex w-full flex-col p-4 md:max-w-6xl md:flex-row md:items-center md:justify-between md:px-6 lg:px-0'>
           <div className='flex flex-row items-center justify-between lg:justify-start'>
             <Link
               href={path}

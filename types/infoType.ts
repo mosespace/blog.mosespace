@@ -13,9 +13,15 @@ export type NavigationSection = {
   pathName: string
   navLinks: navLinks[]
 }
-export type blogSection = {
+export type IProjects = {
   title: string
   href: string
   image: string
+  description: string
+}
+export type IBlogs = {
+  title: string
+  image: string
+  isSponsored:boolean
   description: string
 }

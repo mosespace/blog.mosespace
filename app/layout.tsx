@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Navbar path='/' pathName='blog.mosespace' navLinks={navLinks} />
+        <Navbar path='/' pathName='mosespace.com' navLinks={navLinks} />
         <Announcement
           buttonInfo='Support on Youtube!'
           description='Launched on Youtube! If you like the content we give here, please support me by subscribing to my youtube @codewithmoses today.'

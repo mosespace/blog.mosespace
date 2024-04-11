@@ -1,38 +1,52 @@
-import { blogSection } from '@/types/infoType'
-import { CalendarDays, Timer } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import HeadLine from './headline'
+import { IProjects, IBlogs } from '@/types/infoType'
 
-const blogs: blogSection[] = [
+const projects: IProjects[] = [
   {
-    title: 'Studio by mosespace',
-    href: '#',
-    image:
-      'https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80',
+    title: 'Elite Jobs',
+    href: 'https://www.mosespace.com/',
+    image: '/placeholder.svg',
+    description:
+      "💰 Welcome to 'Elite Jobs' 💡: Explore Jobs With State, a dynamic feature in Next.js 13.5, React, and Tailwind CSS. Seamlessly toggle between monthly and yearly pricing options.",
+  },
+  {
+    title: 'Avail GPT',
+    href: 'https://www.mosespace.com/',
+    image: '/placeholder.svg',
+    description:
+      "🚀 Presenting 'Avail GPT' 🔥: My portfolio's latest addition! A Full-Stack chartGPT clone crafted with Next.js, Tailwind CSS, Prisma, and Rapid API. Experience seamless integration and dynamic",
+  },
+  {
+    title: 'Invoice Generator',
+    href: 'https://www.mosespace.com/',
+    image: '/placeholder.svg',
+    description:
+      "💼 Introducing 'Invoice Generator' 💰: A powerful SAAS tool built with Next.js 14.0, NextAuth React, and Tailwind CSS. Simplify invoice creation for businesses of all sizes. Seamlessly manage",
+  },
+  {
+    title: 'Code With Moses',
+    href: 'https://www.mosespace.com/',
+    image: '/placeholder.svg',
+    description:
+      "👨‍💻 Welcome to 'Code With Moses'! 🚀 Dive into the world of online learning with Next.js 14.1, NextAuth, Stripe React, and Tailwind CSS. 💡 Empower your students to pay and enroll",
+  },
+]
+
+const blogs: IBlogs[] = [
+  {
+    title: 'The Falling Of Solar-Eclipse',
+    image: '/placeholder.svg',
+    isSponsored: true,
     description:
       "Produce professional, reliable streams easily leveraging Preline's innovative broadcast studio",
   },
   {
-    title: 'Studio by mosespace texsting on two',
-    href: '#',
-    image:
-      'https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80',
-    description:
-      "Produce professional, reliable streams easily leveraging Preline's innovative broadcast studio",
-  },
-  {
-    title: 'Desishub Coding',
-    href: '#',
-    image:
-      'https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80',
-    description:
-      "Produce professional, reliable streams easily leveraging Preline's innovative broadcast studio",
-  },
-  {
-    title: 'On Site',
-    href: '#',
-    image:
-      'https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80',
+    title: 'Why You Should Be Using Next Js 14.5',
+    image: '/placeholder.svg',
+    isSponsored: false,
     description:
       "Produce professional, reliable streams easily leveraging Preline's innovative broadcast studio",
   },
@@ -41,100 +55,49 @@ const blogs: blogSection[] = [
 export default function Blog() {
   return (
     <>
-      <div className='mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14'>
-        <div className='mx-auto mb-10 max-w-2xl text-start md:text-center lg:mb-14'>
-          <h2 className='text-2xl font-bold md:text-4xl md:leading-tight dark:text-white'>
-            Insights
-          </h2>
-          <p className='mt-1 text-gray-600 dark:text-gray-400'>
-            Stay in the know with insights from industry experts.
-          </p>
-        </div>
+      <div className='mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14'>
+        <HeadLine
+          title='Recent On My Blogs'
+          description='Stay in the know with insights from industry experts.'
+        />
 
         <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-          <Link
-            className='group dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
-            href='#'
-          >
-            <div className='relative overflow-hidden rounded-xl pt-[50%] sm:pt-[70%]'>
-              <img
-                className='absolute start-0 top-0 h-full w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105'
-                src='https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80'
-                alt='Image Description'
-              />
-              <span className='absolute end-0 top-0 rounded-es-xl rounded-se-xl bg-gray-800 px-3 py-1.5 text-xs font-medium text-white dark:bg-gray-900'>
-                Sponsored
-              </span>
-            </div>
+          {blogs.map((blog, i) => {
+            return (
+              <Link
+                className='group dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                href={`d/blog/${i}`}
+              >
+                <div className='relative overflow-hidden rounded-xl pt-[50%] sm:pt-[70%]'>
+                  <img
+                    className='absolute start-0 top-0 h-full w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105'
+                    src={blog.image}
+                    alt={`Uploaded on blog.mosespace: ${blog.title}`}
+                  />
+                  {blog.isSponsored && (
+                    <span className='absolute end-0 top-0 rounded-es-xl rounded-se-xl bg-gray-900 px-3 py-1.5 text-xs font-medium text-white'>
+                      Sponsored
+                    </span>
+                  )}
+                </div>
 
-            <div className='mt-7'>
-              <h3 className='text-xl font-semibold text-gray-800 group-hover:text-lime-600 dark:text-gray-200'>
-                Studio by Preline
-              </h3>
-              <p className='mt-3 text-gray-800 dark:text-gray-200'>
-                Produce professional, reliable streams easily leveraging
-                Preline's innovative broadcast studio
-              </p>
-              <p className='mt-5 inline-flex items-center gap-x-1 font-medium text-blue-600 decoration-2 group-hover:underline'>
-                Read more
-                <svg
-                  className='h-4 w-4 flex-shrink-0'
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  stroke-width='2'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                >
-                  <path d='m9 18 6-6-6-6' />
-                </svg>
-              </p>
-            </div>
-          </Link>
+                <div className='mt-7'>
+                  <h3 className='text-xl font-semibold  text-gray-200 group-hover:text-lime-600'>
+                    {blog.title}
+                  </h3>
+                  <p className='mt-3 line-clamp-2 text-gray-800 dark:text-gray-200'>
+                    {blog.description}
+                  </p>
+                  <p className='mt-5 inline-flex items-center gap-x-1 font-medium text-blue-600 decoration-2 group-hover:underline'>
+                    Read more
+                    <ChevronRight className='h-4 w-4 flex-shrink-0' />
+                  </p>
+                </div>
+              </Link>
+            )
+          })}
 
-          <Link
-            className='group dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
-            href='#'
-          >
-            <div className='relative overflow-hidden rounded-xl pt-[50%] sm:pt-[70%]'>
-              <img
-                className='absolute start-0 top-0 h-full w-full rounded-xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105'
-                src='https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
-                alt='Image Description'
-              />
-            </div>
-
-            <div className='mt-7'>
-              <h3 className='text-xl font-semibold text-gray-800 group-hover:text-lime-600 dark:text-gray-200'>
-                Onsite
-              </h3>
-              <p className='mt-3 text-gray-800 dark:text-gray-200'>
-                Optimize your in-person experience with best-in-className
-                capabilities like badge printing and lead retrieval
-              </p>
-              <p className='mt-5 inline-flex items-center gap-x-1 font-medium text-blue-600 decoration-2 group-hover:underline'>
-                Read more
-                <svg
-                  className='h-4 w-4 flex-shrink-0'
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  stroke-width='2'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                >
-                  <path d='m9 18 6-6-6-6' />
-                </svg>
-              </p>
-            </div>
-          </Link>
-
+          {/* paid Add */}
           <Link
             className="group relative flex min-h-[15rem] w-full flex-col rounded-xl bg-[url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80')] bg-cover bg-center transition hover:shadow-lg dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             href='#'
@@ -148,20 +111,7 @@ export default function Blog() {
             <div className='p-4 pt-0 md:p-6'>
               <div className='inline-flex items-center gap-2 text-sm font-medium text-white group-hover:text-white/[.7]'>
                 Visit the site
-                <svg
-                  className='h-4 w-4 flex-shrink-0'
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  stroke-width='2'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                >
-                  <path d='m9 18 6-6-6-6' />
-                </svg>
+                <ChevronRight className='h-4 w-4 flex-shrink-0' />
               </div>
             </div>
           </Link>
@@ -169,14 +119,19 @@ export default function Blog() {
       </div>
 
       <div className='mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14'>
+        <HeadLine
+          title='Recent projects'
+          description='Crafting UIs with React since 2023. Passionate about interface design and attention to detail, striving to create great experiences.'
+        />
         {/* <!-- Grid -->s */}
         <div className='grid gap-10 lg:grid-cols-2 lg:gap-y-16'>
           {/* <!-- Card -->s */}
-          {blogs.map((blog, i) => (
+          {projects.map((blog, i) => (
             <Link
               key={i}
-              className='group overflow-hidden rounded-xl border border-lime-500 p-4 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
-              href={`${blog.href}`}
+              className='group overflow-hidden rounded-xl border border-lime-800 p-4 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+              href={blog.href}
+              target='_blank'
             >
               <div className='sm:flex'>
                 <div className='relative h-44 w-full flex-shrink-0 overflow-hidden rounded-xl sm:w-56'>
@@ -188,28 +143,15 @@ export default function Blog() {
                 </div>
 
                 <div className='mt-4 grow px-4 sm:ms-6 sm:mt-0 sm:px-0'>
-                  <h3 className='text-xl font-semibold text-gray-800 group-hover:text-lime-600 dark:text-gray-300 dark:group-hover:text-white'>
+                  <h3 className='text-xl font-semibold  text-gray-300 group-hover:text-lime-600 dark:group-hover:text-white'>
                     {blog.title}
                   </h3>
-                  <p className='mt-3 text-gray-600 dark:text-gray-400'>
+                  <p className='mt-3 line-clamp-3 text-gray-600 dark:text-gray-400'>
                     {blog.description}
                   </p>
-                  <p className='mt-4 inline-flex items-center gap-x-1 font-medium text-blue-600 decoration-2 hover:underline'>
-                    Read more
-                    <svg
-                      className='h-4 w-4 flex-shrink-0'
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='24'
-                      height='24'
-                      viewBox='0 0 24 24'
-                      fill='none'
-                      stroke='currentColor'
-                      stroke-width='2'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                    >
-                      <path d='m9 18 6-6-6-6' />
-                    </svg>
+                  <p className='mt-4 inline-flex items-center gap-x-1 font-medium text-green-600 decoration-2 hover:underline'>
+                    Visit site
+                    <ChevronRight className='h-4 w-4 flex-shrink-0' />
                   </p>
                 </div>
               </div>
